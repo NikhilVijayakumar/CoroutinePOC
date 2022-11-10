@@ -56,6 +56,7 @@ class FirstFragment : Fragment() {
 
     }
 
+    @OptIn(ExperimentalTime::class)
     private fun example7() {
         lifecycleScope.launch(Dispatchers.IO) {
             val time = measureTime {
